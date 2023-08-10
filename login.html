@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="keywords" content="login, post">
+    <meta name="description" content="This is a for login">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Enter your details correctly</h2>
+    {% block content  %}
+    <form action="{% url 'login' %}"  method="post"> 
+        {% csrf_token %}
+        
+
+        <label for="username">Username</label>
+        <input type="text" name="user" placeholder="username" id="user" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="pass1" placeholder="password" id="pass1" required>
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+    {% endblock  %}
+ 
+
+</body>
+</html>

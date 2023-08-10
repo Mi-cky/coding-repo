@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="signup, post">
+    <meta name="description" content="This is a for signup">
+    <title>Enter your details</title>
+</head>
+<body>
+
+{% block content %} 
+
+{% load crispy_forms_tags %}  
+    
+        <h3>Signup</h3>
+        <form action="signup(request)" method="post" id="popup">
+            {% csrf_token %} 
+
+            {{ register_form|crispy }}                    
+            <button class="btn btn-primary" type="submit">Register</button>
+            
+            <!-- <label for="Firstname"> Firstname </label>
+            <input type="text" name="fname" placeholder="Firstname" required>
+           
+    
+            <br>
+            <label for="Secondname">Secondname</label>
+            <input type="text" name="lname" placeholder="Secondname" required>
+    
+            <br>
+            <label for="Email">Email</label>
+            <input type="email" name="email" placeholder="email" required>
+    
+            <br>
+            <label for="username">Username</label>
+            <input type="text" name="user" placeholder="username" required>
+    
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="pass1" placeholder="password" required>
+    
+            <br>
+            <label for="Confirmpassword">Confirm Password</label>
+            <input type="password" name="pass2" placeholder="Confirmpassword" required>
+    
+            <br>
+            <button type="submit">submit</button> -->
+        </form>    
+    
+
+    
+        {% endblock %}
+</body>
+</html>

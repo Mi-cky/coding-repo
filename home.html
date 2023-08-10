@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="signup, post">
+    <meta name="description" content="This is a for signup">
+    <title>GREENCOMMUNITY</title>
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+</head>
+<body>
+    <!-- <a href="template/authentication/login.html"></a> -->
+    <div class="title">
+        <h1>The GREENCOMMUNITY</h1>
+        <!-- <marquee behavior="splitted" direction="right-left,left-right"><h3>WELCOME TO GREENCOMMUNITY....A COMMUNITY FOR SMART FARMERS</h3></marquee> -->
+    </div>
+
+    <div class="navbar">
+
+        
+        <a href="default.asp">Home</a>
+        <a href="news.asp">News</a>
+        <a href="contact.asp">Contact</a>
+        <a href="about.asp">About</a>
+        <a href="signup.html">Signup</a>
+        <a href="login.html">Login</a>
+        <a href="signout.html" >Signout</a>
+            
+    </div>
+    <h4>For you to be an active member of the community please create an account.</h4>
+   
+    <div class="image-container">
+        <img src="{% static '/images/tea.jpg' %}" alt="teafarming" width="430" height="200" >
+        <img src="{% static '/images/cow.jpg' %}" alt="cowfarming" width="430" height="200" >
+        <img src="{% static '/images/hen.jpg' %}" alt="chickenfarming" width="430" height="200" >
+    </div>
+    <h4>Why GREENCOMMUNITY?</h4>
+    <p>GREENCOMMUNITY is a platform designed and established for evryone to be able to make a positive change in their lives
+        Doesn't matter how old or capable or incapable you are what matters is your commitment .We as a community we work together
+        with you to achieve your dreams and unleash all your capabilities.For more information click <a href="about.asp">Info</a>
+    </p>
+    <h4>We offer the following services:</h4>
+    <div class="services">
+        <ul>
+            <li>Farming techniques</li>
+             <br>
+            <li>Investment in shares</li>
+            <br>
+            <li>Saving</li>
+            <br>
+            <li>Job creation</li>
+            <br>
+            <li>Understanding different farming methods and domestic keeping</li>
+            <br>
+            <li>Socializing</li>
+            <br>
+            <li>Smart farming</li>
+            
+        </ul>
+
+     
+        <img src="{% static '/images/bee.jpg' %}" alt="beefarming" width="430" height="200" >
+    </div>
+   
+    
+    <div class="contact">
+        <h4>Contacts:</h4>
+        Email:greencommunity@gmail.com
+        <br>
+        website:greencom.ac.ke
+        <br>
+        phone:+(254)784562636
+        <br>
+        phone:+(01)784562636
+        <br>
+        phone:+(72)784562636
+    </div>
+
+    <script src="{% static 'js/home.js' %}"></script>
+
+</body>
+</html>

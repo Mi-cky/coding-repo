@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="show, post">
+    <meta name="description" content="This is a for showcase"> 
+    <title>Document</title>
+</head>
+<body>
+
+    
+    {% url 'show' %}
+   
+    {% if user.is_authenticated %}
+    <p>Hey {{fname}} you have successfully created an account</p>
+    {% else %}
+    <p>Please login to continue</p>
+    {% endif %}
+</body>
+</html>
